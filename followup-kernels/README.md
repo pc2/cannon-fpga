@@ -35,7 +35,7 @@ The generated `host` executable must be called with the following parameters
 
 Where
  - `<#CU>` is the number of compute units (i.e. the number of kernels in the .aocx file)
- - `<block-dim>` block size of the synthesized code (i.e. `dim1` in the kernel code),
+ - `<block-dim>` is the block size of the synthesized code (i.e. `dim1` in the kernel code),
  - `<dim>` is size of the test matrices, must be a multiple of `block-dim`,
  - `<.aocx file path>` is the path to the `.aocx` file.
 

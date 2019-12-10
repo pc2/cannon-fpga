@@ -11,4 +11,4 @@ Paolo Gorlani, Tobias Kenter, Christian Plessl, *OpenCL implementation of Cannon
  - `host-src` and `host-includes` contain the host codes.
  
 
-**NOTE:**: set `PLATFORM_ID` and `DEVICE_ID` in `host-src/host.cpp` in order to target your FPGA accelerator. 
+**NOTE:** set `PLATFORM_ID` and `DEVICE_ID` in `host-src/host.cpp` in order to target your FPGA accelerator. 

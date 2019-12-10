@@ -1,15 +1,13 @@
 ## Kernel codes
 
- +------------+------------------+---------------------+
  |  directory | # Compute Units  | Block size (`dim1`) |
- +------------+------------------+---------------------+
+ |:----------:|:----------------:|:-------------------:|
  | `1CU-1024` |        1         |         1024        |
  | `2CU-720`  |        2         |         720         |
  | `3CU-512`  |        3         |         512         |
  | `4CU-512`  |        4         |         512         |
  | `5CU-512`  |        5         |         512         |
  | `6CU-360`  |        6         |         360         |
- +------------+------------------+---------------------+
 
 Each directory contains a `.cl` file and the `acl_quartus_report.txt` files related to the syntheses with different seeds.
 
@@ -43,5 +41,4 @@ Where
  - `<.aocx file path>` is the path to the `.aocx` file.
 
 **Note 1:** `<#CU>` must match with the number compute units of the `.aocx` file.
-
 
