@@ -1,12 +1,10 @@
 ### Kernel code
 
- +------------+------------------+---------------------+
- |  directory | # Compute Units  | Block size (`dim1`) |
- +------------+------------------+---------------------+
- | `5CU-512`  |        5         |         512         |
- | `6CU-360`  |        6         |         360         |
- | `7CU-360`  |        7         |         360         |
- +------------+------------------+---------------------+
+ | directory | # Compute Units  | Block size (`dim1`) |
+ |-----------|------------------|---------------------|
+ | `5CU-512` |        5         |         512         |
+ | `6CU-360` |        6         |         360         |
+ | `7CU-360` |        7         |         360         |
 
 Each directory contains a `.cl` file and the `acl_quartus_report.txt` files related to the syntheses with different seeds.
 
@@ -39,5 +37,5 @@ Where
  - `<#CU>` is the number of compute units (i.e. the number of kernels in the .aocx file)
  - `<block-dim>` block size of the synthesized code (i.e. `dim1` in the kernel code),
  - `<dim>` is size of the test matrices, must be a multiple of `block-dim`,
- - `<.aocx file path>` is the path to the synthesis result.
+ - `<.aocx file path>` is the path to the `.aocx` file.
 
