@@ -16,7 +16,7 @@ In order to synthesize a kernel, enter a directory (e.g. `5CU-512`) and run the 
 $ aoc -v -v -v -report -g -W -high-effort -board=p520_max_sg280l -fp-relaxed -fpc -no-interleaving=default -global-ring -duplicate-ring -seed=<seed> krnl_cannon.cl -o krnl_cannon-s<seed>.aocx
 ```
 
-The kernel codes reported in the paper are synthesized with Intel FPGA SDK for OpenCL 19.3 with the `p520_hpc_sg280l` BittaWare 520N Board Support Package based on Quartus 19.2.
+The kernel codes in this directory are synthesized with Intel FPGA SDK for OpenCL 19.3 with the `p520_hpc_sg280l` BittaWare 520N Board Support Package based on Quartus 19.2.
 
 
 ## Host code
