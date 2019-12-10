@@ -1,0 +1,64 @@
+
+ Matrix multiplication sizes
+  dim  = 46080
+  size of matrices = (46080, 46080)
+  dim1 = 360
+  size of blocks = (360, 360)
+
+Selecting OpenCL device (PLATFORM_ID=0, DEVICE_ID=0)
+  Platform: Intel(R) FPGA SDK for OpenCL(TM)
+  Device: p520_hpc_sg280l : BittWare Stratix 10 OpenCL platform (aclbitt_s10_pcie0)
+
+Loading bitstream form HFON_fine_v4/7kernels-320_2pipe_193_ivdep_depindex-3-SHIFT19/krnl_cannon-s7.aocx ...
+MMD INFO : Disabling SmartVID (fix) polling
+MMD INFO : Enabling SmartVID (fix) polling
+
+Kernel creation
+  krnl_cannon_0: OK
+  krnl_cannon_1: OK
+  krnl_cannon_2: OK
+  krnl_cannon_3: OK
+  krnl_cannon_4: OK
+  krnl_cannon_5: OK
+  krnl_cannon_6: OK
+
+Set arguments
+  krnl_cannon_0:	0	19	19	OK
+  krnl_cannon_1:	19	38	19	OK
+  krnl_cannon_2:	38	56	18	OK
+  krnl_cannon_3:	56	74	18	OK
+  krnl_cannon_4:	74	92	18	OK
+  krnl_cannon_5:	92	110	18	OK
+  krnl_cannon_6:	110	128	18	OK
+
+Kernel execution start
+Kernel execution finish
+
+Kernel times [ns]
+  krnl_cannon_0: start=1711168623022917	stop=1711285187926311	elapsed=116564903394
+  krnl_cannon_1: start=1711168623040453	stop=1711285187968984	elapsed=116564928531
+  krnl_cannon_2: start=1711168623055888	stop=1711279087465363	elapsed=110464409475
+  krnl_cannon_3: start=1711168623072545	stop=1711279087495680	elapsed=110464423135
+  krnl_cannon_4: start=1711168623088365	stop=1711279087551570	elapsed=110464463205
+  krnl_cannon_5: start=1711168623106321	stop=1711279087598004	elapsed=110464491683
+  krnl_cannon_6: start=1711168623123472	stop=1711279087637271	elapsed=110464513799
+
+Result check
+
+  Floating-point class output summary
+    #NaNs:	0 (0 %)
+    #infs:	0 (0 %)
+    #normals:	2123366400 (100 %)
+    #subnormals:	0 (0 %)
+    #zeros:	0 (0 %)
+
+  Correctness
+    Max ULP distance: 169  at position: (32374, 27734)  host: 11468.4  fpga: 11468.56
+    ULP distance: min(0) max(169) mean(21.88723)
+
+    Max relative error: 1.439077e-05  at position: (32374, 27734)  host: 11468.4  fpga: 11468.56
+
+
+Kernels performances
+  Overall kernel execution time: 116564946067 ns
+  Overall kernel floating-point performance: 1678.784 GFLOPS

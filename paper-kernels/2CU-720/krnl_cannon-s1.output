@@ -1,0 +1,51 @@
+
+ Matrix multiplication sizes
+  dim1 = 720
+  dim  = 46080
+  size of matrices = (46080, 46080)
+  size of blocks = (720, 720)
+
+Computing matrix multiplication on host (it can take long) ... done!
+
+Selecting OpenCL device (PLATFORM_ID=0, DEVICE_ID=0)
+  Platform: Intel(R) FPGA SDK for OpenCL(TM)
+  Device: p520_max_sg280l : BittWare Stratix 10 OpenCL platform (aclbitt_s10_pcie0)
+
+Loading bitstream form FINAL/2kernels-720/krnl_cannon-s1.aocx ...
+MMD INFO : Disabling SmartVID (fix) polling
+MMD INFO : Enabling SmartVID (fix) polling
+
+Kernel creation
+  krnl_cannon_0: OK
+  krnl_cannon_1: OK
+
+Set arguments
+  krnl_cannon_0:		OK
+  krnl_cannon_1:		OK
+
+Kernel execution start
+Kernel execution finish
+
+Kernel times [ns]
+  krnl_cannon_0: start=1656641986508199	stop=1656945862321548	elapsed=303875813349
+  krnl_cannon_1: start=1656641986525730	stop=1656945855602847	elapsed=303869077117
+
+Result check
+
+  Floating-point class output summary
+    #NaNs:	0 (0 %)
+    #infs:	0 (0 %)
+    #normals:	2123366400 (100 %)
+    #subnormals:	0 (0 %)
+    #zeros:	0 (0 %)
+
+  Correctness
+    Max ULP distance: 9  at position: (15351, 42252)  host: 11482.99  fpga: 11482.98
+    ULP distance: min(0) max(9) mean(1.1562)
+
+    Max relative error: 7.653986e-07  at position: (15351, 42252)  host: 11482.99  fpga: 11482.98
+
+
+Kernels performances
+  Overall kernel execution time: 303875813349 ns
+  Overall kernel floating-point performance: 643.9714 GFLOPS

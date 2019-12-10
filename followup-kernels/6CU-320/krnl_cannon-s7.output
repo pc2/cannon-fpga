@@ -1,0 +1,61 @@
+
+ Matrix multiplication sizes
+  dim  = 46080
+  size of matrices = (46080, 46080)
+  dim1 = 360
+  size of blocks = (360, 360)
+
+Selecting OpenCL device (PLATFORM_ID=0, DEVICE_ID=0)
+  Platform: Intel(R) FPGA SDK for OpenCL(TM)
+  Device: p520_hpc_sg280l : BittWare Stratix 10 OpenCL platform (aclbitt_s10_pcie0)
+
+Loading bitstream form HFON_fine_v4/6kernels-360_2pipe_193_ivdep_depindex-3-SHIFT19/krnl_cannon-s7.aocx ...
+MMD INFO : Disabling SmartVID (fix) polling
+MMD INFO : Enabling SmartVID (fix) polling
+
+Kernel creation
+  krnl_cannon_0: OK
+  krnl_cannon_1: OK
+  krnl_cannon_2: OK
+  krnl_cannon_3: OK
+  krnl_cannon_4: OK
+  krnl_cannon_5: OK
+
+Set arguments
+  krnl_cannon_0:	0	22	22	OK
+  krnl_cannon_1:	22	44	22	OK
+  krnl_cannon_2:	44	65	21	OK
+  krnl_cannon_3:	65	86	21	OK
+  krnl_cannon_4:	86	107	21	OK
+  krnl_cannon_5:	107	128	21	OK
+
+Kernel execution start
+Kernel execution finish
+
+Kernel times [ns]
+  krnl_cannon_0: start=1715548872722930	stop=1715667095600657	elapsed=118222877727
+  krnl_cannon_1: start=1715548872739491	stop=1715667095643913	elapsed=118222904422
+  krnl_cannon_2: start=1715548872756096	stop=1715661722067357	elapsed=112849311261
+  krnl_cannon_3: start=1715548872771334	stop=1715661722095698	elapsed=112849324364
+  krnl_cannon_4: start=1715548872788388	stop=1715661722145586	elapsed=112849357198
+  krnl_cannon_5: start=1715548872804612	stop=1715661722193788	elapsed=112849389176
+
+Result check
+
+  Floating-point class output summary
+    #NaNs:	0 (0 %)
+    #infs:	0 (0 %)
+    #normals:	2123366400 (100 %)
+    #subnormals:	0 (0 %)
+    #zeros:	0 (0 %)
+
+  Correctness
+    Max ULP distance: 177  at position: (40084, 39812)  host: 11577.92  fpga: 11578.09
+    ULP distance: min(0) max(177) mean(21.88703)
+
+    Max relative error: 1.492941e-05  at position: (40084, 39812)  host: 11577.92  fpga: 11578.09
+
+
+Kernels performances
+  Overall kernel execution time: 118222920983 ns
+  Overall kernel floating-point performance: 1655.24 GFLOPS
